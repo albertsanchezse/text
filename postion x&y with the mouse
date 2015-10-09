@@ -1,0 +1,13 @@
+ PFont font;
+
+    void setup() {
+      size(500,400);
+      font = createFont("SansSerif",1);
+      textFont(font,20);
+    }
+
+    void draw() {
+      background(0);
+      String myText = "x: " + mouseX + "y: " + mouseY;
+      text(myText,mouseX,mouseY);
+    }
