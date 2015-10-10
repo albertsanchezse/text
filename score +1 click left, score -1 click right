@@ -1,0 +1,22 @@
+PFont font;
+    int score;
+    
+    void setup() {
+      size(500,400);
+      font = createFont("SansSerif",1);
+      textFont(font,20);
+    }
+
+    void draw() {
+      background(0);
+      String myText = "score: " + score;
+     
+      if (mousePressed && (mouseButton==LEFT)) {score = score+1;
+      delay (250);
+      }
+      
+      if (mousePressed && (mouseButton==RIGHT)) {score = score-1;
+      delay (250);
+      }
+      text(myText,350,50);
+    }
