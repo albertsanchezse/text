@@ -1,0 +1,7 @@
+PFont font;
+
+background (0);
+
+font = loadFont("ComicSansMS-Bold-48.vlw");
+textFont(font, 32);
+text("HELLO", 10, 50);
