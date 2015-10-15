@@ -1,0 +1,46 @@
+int x=0;
+int a=1;
+int b=0;
+int c=0;
+ PFont font;
+    int score;
+
+void setup() {
+  size(500, 400);
+  font = createFont("SansSerif",1);
+      textFont(font,20);
+}
+
+void draw() {
+  background(0);
+   x = x + a;
+  
+  if (x>500) {a=-1;
+  }
+  
+  if (x<0) {a=+1;
+  }
+  
+  if (x==250) {a = a*5;
+  }
+  
+  fill(0, 0, 255);          
+  ellipse(x, 200, 50, 50);
+  
+  String myText = "score: " + score;
+     
+      
+      text(myText,350,50);
+}
+
+void mouseClicked (){
+  b=x+100;
+  c=x-100;
+  
+  if (b>mouseX) {
+    if (c<mouseX) {
+      if (300>mouseY) {
+        if (100<mouseY) {
+      score= score+1;}}}}
+  }
+
